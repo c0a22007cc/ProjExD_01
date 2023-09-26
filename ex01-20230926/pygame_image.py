@@ -9,6 +9,8 @@ def main():
     bg_img = pg.image.load("ex01/ex01-20230926/fig/pg_bg.jpg")
     kk_img = pg.image.load("ex01/ex01-20230926/fig/3.png")
     kk_img = pg.transform.flip(kk_img, True, False)
+    kk_img_rzoom = pg.transform.rotozoom(kk_img, 10, 1.0)
+    kk_imgs = [kk_img, kk_img_rzoom]
 
     tmr = 0
     while True:
